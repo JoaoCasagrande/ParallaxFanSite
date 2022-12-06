@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Martel;
+    src: url("../fonts/martel.ttf");
+}
+
+:root {
+    --font-title: 'Martel';
+    --font-text: 'Verdana','Arial','Times New Roman',sans-serif;
+}
+
+/* #region Padronização de fonts */
+h1, h2, h3, h4 {
+    font-family: var(--font-title) !important;
+    text-align: center;
+    /**/
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+}
+
+h1 {
+    font-size: 3rem !important;
+    margin-bottom: 0 !important;
+}
+
+h2 {
+    font-size: 2rem !important;
+}
+
+section, div, span, label, input, p {
+    font-family: var(--font-text);
+}
+/* #endregion */
+
+* {
+    box-sizing: border-box;
+}
+
+/* #region Body Style */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /**/
+    overflow: overlay;
+}
+
+    body::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: black;
+        /**/
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+/* #endregion */
+
+
+/* #region Padronização dos cards e blocos */
+.card {
+    width: 100%;
+    padding: 6px;
+    /**/
+    color: black;
+    /**/
+    border: none;
+    background-color: #0D2E2B;
+}
+
+    .card > div {
+        padding: 24px;
+        /**/
+        background-color: #0B6081;
+        border: 2px solid grey;
+    }
+
+.block {
+    display: flex;
+    align-items: center;
+    /**/
+    min-height: 100vh;
+    padding-right: 25%;
+    padding-left: 25%;
+    /**/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text_area {
+    text-align: center;
+    /**/
+    width: 100%;
+    padding: 8px;
+    /**/
+    border: none;
+    background-color: #f4c88c;
+}
+
+    .text_area > div {
+        width: 100%;
+        padding: 24px;
+        /**/
+        background-color: #F5E5CE;
+        border: 1px solid #793d03;
+    }
+/* #endregion */
+
+.header_page {
+    background-image: url(../img/img1.jpg);
+}
+
+.content_page1 {
+    background-image: url(../img/img2.jpg);
+}
+
+.content_text1 .coluna1 {
+    width: 90%;
+}
+
+.coluna1 p {
+    text-align: left;
+}
+
+.content_page2 {
+    background-image: url(../img/img3.jpg);
+}
+
+.linha2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /**/
+    width: 100%;
+}
+
+.linha2 p {
+    text-align: left;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    /**/
+    width: 25%;
+}
+
+.footer_page {
+    background-image: url(../img/img4.jpg);
+}
+
+@media screen and (max-width: 769px) {
+    .block {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
